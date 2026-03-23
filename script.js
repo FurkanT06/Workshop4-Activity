@@ -11,3 +11,9 @@ const colorBtn = document.getElementById("colorBtn");
 changeTextBtn.addEventListener("click", () => {
   message.textContent = "The text has been changed!";
 });
+
+
+colorBtn.addEventListener("click", () => {
+    colorBtn.style.color = "red";
+  });
+
