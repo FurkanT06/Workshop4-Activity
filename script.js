@@ -1,23 +1,25 @@
 const title = document.getElementById("title");
-const message = document.getElementById("message");
-const output = document.getElementById("output");
+const subtitle = document.getElementById("subtitle");
 const nameInput = document.getElementById("nameInput");
+const output = document.getElementById("output");
+const statusText = document.getElementById("statusText");
 
-const changeTextBtn = document.getElementById("changeTextBtn");
 const greetBtn = document.getElementById("greetBtn");
-const colorBtn = document.getElementById("colorBtn");
+const clearBtn = document.getElementById("clearBtn");
+const changeTitleBtn = document.getElementById("changeTitleBtn");
+const toggleThemeBtn = document.getElementById("toggleThemeBtn");
+const countBtn = document.getElementById("countBtn");
+const statusBtn = document.getElementById("statusBtn");
 
-// Starter example
-changeTextBtn.addEventListener("click", () => {
-  message.textContent = "The text has been changed!";
-});
+// Starter example 1
+const formatName = (name) => name.trim();
 
-
-colorBtn.addEventListener("click", () => {
-    colorBtn.style.color = "red";
-});
-  
+// Starter example 2
 greetBtn.addEventListener("click", () => {
-    greetBtn.style.backgroundColor = "blue";
-  });
+  output.textContent = `Hello, ${formatName(nameInput.value)}!`;
+});
 
+// Starter example 3
+clearBtn.addEventListener("click", () => {
+  output.textContent = "Output will appear here.";
+});

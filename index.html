@@ -3,22 +3,41 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Git + JS Practice</title>
-  <link rel="stylesheet" href="style.css" />
+  <title>Workshop 4 Activity</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <h1 id="title">JavaScript Practice App</h1>
-  <p id="message">Welcome to the Git and JavaScript activity.</p>
+  <main class="app">
+    <h1 id="title">Team Dashboard</h1>
+    <p id="subtitle">Make a small feature update and submit it through a pull request.</p>
 
-  <input id="nameInput" type="text" placeholder="Enter your name" />
-  
-  <div class="buttons">
-    <button id="changeTextBtn">Change Text</button>
-    <button id="greetBtn">Greet User</button>
-    <button id="colorBtn">Change Color</button>
-  </div>
+    <section class="card">
+      <h2>Welcome Panel</h2>
+      <input id="nameInput" type="text" placeholder="Enter your name" />
+      <div class="button-row">
+        <button id="greetBtn">Greet User</button>
+        <button id="clearBtn">Clear Output</button>
+      </div>
+      <p id="output">Output will appear here.</p>
+    </section>
 
-  <p id="output">Output will appear here.</p>
+    <section class="card">
+      <h2>Quick Actions</h2>
+      <div class="button-row">
+        <button id="changeTitleBtn">Change Title</button>
+        <button id="toggleThemeBtn">Toggle Theme</button>
+        <button id="countBtn">Count Characters</button>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>Status Panel</h2>
+      <p id="statusText">Status: Waiting for update</p>
+      <div class="button-row">
+        <button id="statusBtn">Update Status</button>
+      </div>
+    </section>
+  </main>
 
   <script src="script.js"></script>
 </body>
