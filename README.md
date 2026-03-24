@@ -8,8 +8,8 @@
 
 | File | What it is |
 |------|-----------|
-| `index.html` | The page structure — don't edit this |
-| `styles.css` | The styling — don't edit this |
+| `index.html` | The page structure: don't edit this |
+| `styles.css` | The styling: don't edit this |
 | `script.js` | ✅ **This is where you write all your code** |
 
 All the buttons and elements are already on the page. Your job is to make them do things using JavaScript.
@@ -181,6 +181,46 @@ Add a listener to `resetBtn`. Set `statusText.textContent` back to `"Status: Res
 Inside the `greetBtn` listener, use an `if` statement to check `!nameInput.value.trim()`. If it's empty, set `output.textContent` to the error message and `output.style.color = "crimson"`. In the `else` block, show the normal greeting and reset `output.style.color = ""`.
 
 </details>
+
+---
+# Pull Request Template
+
+## What did you change?
+Describe what you added or modified. Be specific and mention the button, function, or element you worked on.
+
+Example:
+> I added an event listener to the `statusBtn` that disables the button after it is clicked once.
+
+---
+
+## Task number
+<!-- Which card did you pick from the bucket? -->
+
+Task #
+
+---
+
+## How to test it
+Tell the reviewer exactly what to do to see your change working in the browser.
+
+Example:
+> 1. Open `index.html` in the browser
+> 2. Go to the Status Panel
+> 3. Click the Update Status button
+> 4. The button should grey out and stop responding to clicks
+
+---
+
+## Screenshot (optional but encouraged)
+
+---
+
+## Checklist
+- [ ] My code is in `script.js` below the starter examples
+- [ ] I tested it in the browser and it works
+- [ ] I created a branch and I did **not** push directly to `main`
+- [ ] My commit message describes what I did
+- [ ] My PR base is set to **my fork**, not the original repo
 
 ---
 
