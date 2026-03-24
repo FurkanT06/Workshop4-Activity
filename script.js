@@ -48,3 +48,9 @@ clearBtn.addEventListener("click", () => {
 });
 
 // ── TASKS: code below this line ────────────────────────────
+let count = 0;
+
+clickCounter.addEventListener("click", () => {
+  count = count +1;
+  clickCounter.textContent = `Clicked ${count} times`;
+});
